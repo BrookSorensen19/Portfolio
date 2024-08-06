@@ -19,12 +19,14 @@ function App() {
           Learn React
         </a>
       </header>
-      <Navbar />
+      <>
+        <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/careers" element={<Careers />} />
           </Routes>
+      </>
     </div>
     
   );
