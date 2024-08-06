@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -18,7 +19,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/careers" element={<Careers />} />
+          </Routes>
     </div>
+    
   );
 }
 
